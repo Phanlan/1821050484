@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            
+            body {
+                color: #666;
+                font-family: 'Old Standard TT', serif;
+            }
+            
+            header {
+                text-align: center;
+                background: #C1FFC1;
+                height: 200px;
+            }
+            
+            header h1 {
+                font-size: 50px;
+            }
+            
+            header h3 {
+                margin-top: 20px;
+            }
+            
+            nav {
+                background: #8FBC8F;
+            }
+            
+            nav ul li {
+                display: inline-block;
+                list-style: none;
+                position: relative;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                padding: 10px 20px;
+                display: block;
+            }
+            
+            nav ul li a:hover {
+                background-color: black;
+                transition: 0.6s;
+                text-decoration: 1px dotted #fff;
+            }
+            
+            nav ul li>ul {
+                position: absolute;
+                visibility: hidden;
+                background: gray;
+            }
+            
+            nav ul li>ul li {
+                width: 120px;
+                border-bottom: 1px solid black;
+            }
+            
+            nav ul li>ul li a {
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+            
+            nav ul li:hover>ul {
+                visibility: visible;
+                display: block;
+            }
+            
+            .container {
+                max-width: 1080px;
+                margin: 0 auto;
+                padding-left: 25px;
+                padding-right: 25px;
+                margin-top: 40px;
+            }
+            
+            .container h1 {
+                text-align: center;
+            }
+            
+            .icon-title {
+                margin: 0 auto;
+                margin-bottom: 40px;
+                width: 100px;
+                height: 5px;
+                background: blueviolet;
+                border-radius: 100px;
+            }
+            
+            .row {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            
+            .col-2 {
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            
+            .col-2 img {
+                width: 100%;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Landing.....</h1>
+            <h3>Welcom to my webSite</h3>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </li>
+                <li style="float: right;"><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="icon-title"></div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="./img/tải xuống (5).jpg">
+                    <h3>Điện thoại Realme</h3>
+                    <p>3.456 VND</p>
+                </div>
+                <div class="col-2">
+                    <img src="./img/tải xuống (6).jpg">
+                    <h3>Điện thoại Realme</h3>
+                    <p>4.235 VND</p>
+                </div>
+                <div class="col-2">
+                    <img src="./img/tải xuống (7).jpg">
+                    <h3>Điện thoại Iphone</h3>
+                    <p>18.694 VND</p>
+                </div>
+                <div class="col-2">
+                    <img src="./img/">
+                    <h3>Điện thoại Realme</h3>
+                    <p>4.456 VND</p>
+                </div>
+                <div class="col-2">
+                    <img src="./img/đt1.jpg">
+                    <h3>Điện thoại Realme</h3>
+                    <p>5.128 VND</p>
+                </div>
+                <div class="col-2">
+                    <img src="./img/đt2.jpg">
+                    <h3>Điện thoại Realme</h3>
+                    <p>2.768 VND</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
