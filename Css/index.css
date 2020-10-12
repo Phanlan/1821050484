@@ -8,7 +8,7 @@ header {
     color: #fff;
     text-align: center;
     height: 400px;
-    background-image: url("img/Cong-Cu-Thiet-Ke-Mien-Phi-Giup-Ban-Thiet-Ke-Banner-Dep-Nhu-Mo-e1523678357484-1200x675.png");
+    background-image: url("../img/Cong-Cu-Thiet-Ke-Mien-Phi-Giup-Ban-Thiet-Ke-Banner-Dep-Nhu-Mo-e1523678357484-1200x675.png");
 }
 
 header h1 {
@@ -18,6 +18,9 @@ header h1 {
 header h3 {
     margin-top: 20px;
 }
+
+
+/*Thanh Menu*/
 
 nav {
     background: #B9D3EE;
@@ -64,6 +67,9 @@ nav ul li:hover>ul {
     visibility: visible;
     display: block;
 }
+
+
+/*Nội dung*/
 
 .container {
     max-width: 1080px;
