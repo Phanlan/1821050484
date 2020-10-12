@@ -1,0 +1,77 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    height: 400px;
+    background-image: url("img/Cong-Cu-Thiet-Ke-Mien-Phi-Giup-Ban-Thiet-Ke-Banner-Dep-Nhu-Mo-e1523678357484-1200x675.png");
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header h3 {
+    margin-top: 20px;
+}
+
+nav {
+    background: #B9D3EE;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    transition: 0.6s;
+    text-decoration: 1px dotted #fff;
+}
+
+nav ul li>ul {
+    position: absolute;
+    visibility: hidden;
+    background: gray;
+}
+
+nav ul li>ul li {
+    width: 120px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li>ul li a {
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover>ul {
+    visibility: visible;
+    display: block;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.one {
+    height: 400px;
+    width: 900px;
+}

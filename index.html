@@ -6,86 +6,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Css/index.css">
         <title>Document</title>
-        <style>
-            * {
-                padding: 0px;
-                margin: 0px;
-                box-sizing: border-box;
-            }
-            
-            header {
-                color: #fff;
-                text-align: center;
-                height: 400px;
-                background-image: url("img/Cong-Cu-Thiet-Ke-Mien-Phi-Giup-Ban-Thiet-Ke-Banner-Dep-Nhu-Mo-e1523678357484-1200x675.png");
-            }
-            
-            header h1 {
-                font-size: 50px;
-            }
-            
-            header h3 {
-                margin-top: 20px;
-            }
-            
-            nav {
-                background: #B9D3EE;
-            }
-            
-            nav ul li {
-                display: inline-block;
-                list-style: none;
-                position: relative;
-            }
-            
-            nav ul li a {
-                text-decoration: none;
-                color: #fff;
-                font-size: 20px;
-                padding: 10px 20px;
-                display: block;
-            }
-            
-            nav ul li a:hover {
-                background-color: black;
-                transition: 0.6s;
-                text-decoration: 1px dotted #fff;
-            }
-            
-            nav ul li>ul {
-                position: absolute;
-                visibility: hidden;
-                background: gray;
-            }
-            
-            nav ul li>ul li {
-                width: 120px;
-                border-bottom: 1px solid black;
-            }
-            
-            nav ul li>ul li a {
-                text-align: center;
-                padding: 10px 20px;
-                text-decoration: none;
-            }
-            
-            nav ul li:hover>ul {
-                visibility: visible;
-                display: block;
-            }
-            
-            .container {
-                max-width: 1080px;
-                margin: 0 auto;
-                margin-top: 40px;
-            }
-            
-            .one {
-                height: 400px;
-                width: 900px;
-            }
-        </style>
     </head>
 
     <body>
@@ -151,15 +73,40 @@
                 <p>Your email address will not be published. Required fields are marked *</p>
 
                 <textarea id="comment" name="comment" cols="70" rows="8" required="required" placeholder="Comment"></textarea>
-                <label></label><br>
-                <input id="Name" type="text" placeholder="Name"><br>
-                <input id="Email" type="text" placeholder="Email"><br>
+                <label id="commentError"></label><br>
+                <input id="Name" type="text" placeholder="Name">
+                <label id="nameError"></label><br>
+                <input id="Email" type="text" placeholder="Email">
+                <label id="emailError"></label><br>
                 <input id="check" type="checkbox">
+                <label id="checkError"></label>
                 <label>Save my name, email, and website in this browser for the next time I comment.</label><br>
-                <button>Submit</button>
+
             </form>
+            <button type="submit" id="sub">Submit Comment</button>
         </div>
         <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector("#comment").onchange = function() {
+                    if (document.querySelector("comment").value == "") {
+                        document.querySelector("#commentError").innerHTML = "Hãy nhập Comment";
+                    } else(document.querySelector("#commentError").innerHTML = "");
+                }
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector("#Name").onchange = function() {
+                    if (document.querySelector("Name").value == "") {
+                        document.querySelector("#nameError").innerHTML = "Hãy nhập họ và tên";
+                    } else(document.querySelector("#nameError").innerHTML = "");
+                }
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector("#Email").onchange = function() {
+                    if (document.querySelector("#Email").value == "") {
+                        document.querySelector("#emailError").innerHTML = "Hãy nhập Email";
+                    } else(document.querySelector("#emailError").innerHTML = "");
+                }
+            });
         </script>
     </body>
 
